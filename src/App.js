@@ -23,7 +23,7 @@ function App() {
     };
   }, [submitStatus])
 
- const Button =  styled.button`
+  const Button = styled.button`
  
   color: white;
   width: 80px;
@@ -35,28 +35,19 @@ function App() {
   cursor: pointer;
 
  `
-//  const Input = styled.input`
-//  border-radius: 6px;
-//  width: 170px;
- 
-//  `
   return (
     <div class="container pb-3">
       <div class="row">
-        {/* <div class="col"> */}
-
         <h1 class="alert text-center">Weather App</h1>
         <div className='flex inputContainer'>
-        <div className="col mb-3">
-            <input type='search'  onChange={(e) => setCity(e.target.value)} placeholder='City' />
-
+          <div className="col mb-3">
+            <input type='search' onChange={(e) => setCity(e.target.value)} placeholder='City' />
           </div>
           <div className="col mb-3">
-            <input type='search'  placeholder='India' />
+            <input type='search' placeholder='India' />
           </div>
-         
           <div class="col mb-3">
-            <Button  onClick={submitFn} >Submit</Button>
+            <Button onClick={submitFn} >Submit</Button>
           </div>
 
         </div>
@@ -68,16 +59,13 @@ function App() {
               <p>Friday, Dec 09,2022</p>
               <div id="tempcard">
                 <h6 class="card-subtitle mb2">{post && post.main.temp}°C</h6>
-
               </div>
-
               <p>haze</p>
             </div>
           </div>
         </div>
         <div className='detailComp flex space-between'>
           <div >
-
             <div><span>High/Low</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{post && post.main.temp_max}/{post && post.main.temp_min}</span></div>
             <div>.......................................</div>
             <div><span>Humadity</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{post && post.main.humidity} %</span></div>
@@ -94,7 +82,6 @@ function App() {
             <div>.......................................</div>
           </div>
         </div>
-        {/* </div> */}
       </div>
     </div>
 
