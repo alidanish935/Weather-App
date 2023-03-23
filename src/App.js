@@ -26,9 +26,9 @@ function App() {
   const Button = styled.button`
  
   color: white;
-  width: 80px;
+  width: 130px;
   height: 32px;
-  margin-left: 3px;
+  margin-left: 38px;
   background-color: blue;
   border: none;
   border-radius: 6px;
@@ -42,9 +42,6 @@ function App() {
         <div className='flex inputContainer'>
           <div className="col mb-3">
             <input type='search' className='input' onChange={(e) => setCity(e.target.value)} placeholder='City' />
-          </div>
-          <div className="col mb-3">
-            <input type='search' className='input'  placeholder='India' />
           </div>
           <div class="col mb-3">
             <Button onClick={submitFn} >Submit</Button>
