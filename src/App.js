@@ -41,10 +41,10 @@ function App() {
         <h1 class="alert text-center">Weather App</h1>
         <div className='flex inputContainer'>
           <div className="col mb-3">
-            <input type='search' onChange={(e) => setCity(e.target.value)} placeholder='City' />
+            <input type='search' className='input' onChange={(e) => setCity(e.target.value)} placeholder='City' />
           </div>
           <div className="col mb-3">
-            <input type='search' placeholder='India' />
+            <input type='search' className='input'  placeholder='India' />
           </div>
           <div class="col mb-3">
             <Button onClick={submitFn} >Submit</Button>
